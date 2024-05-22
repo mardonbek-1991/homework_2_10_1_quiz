@@ -1,0 +1,79 @@
+In Uzbek.
+
+Pasword, userName va roleni saqlaydigan 3 lik array yarating ya'ni matrix - > String [][] list = new String [10][3];
+role da Role Enumining qiymatlari saqlanadi. Role{ STUDENT, TEACHER} enami.
+5 ta user menu qo'shing.
+User dan 1.kirish yoki 2.registeratsiya qilish tanlovlarini so'rang.
+Registratsiyani ya'ni 2 ni bossa user ma'lumotlarini to'ldirsin. default xolatda qoshilgan user STUDENT role i bilan qoshilsin.
+user kiritgan password va userName listda boladigan bolsa,
+"User already exist" deb gan habardi consolega chop eting.
+Agar user 1 ni kirishni bossa Systemega kirayotganda userni password va user nameini so'rang.
+shunaqa password va userNameli user listda topilsa systemaga kirsin agar topilmasa "User not found" degan habar chop etilsin.
+Questionlarni saqlovchi array bo'lsin -> Question[] questions = new Questions[10];
+Question va Answer classlari
+
+class Question {
+  private String question; // savol
+  private Answer[] answers = new Answer[4];
+}
+class Answer{
+    String answer; // javobi
+    boolean isCorrect; // shu javobi tog'rimi
+}
+
+Systemaga muaffaqiyatli kirgan user ning role i Student yoki User bo'ladigan bo'lsa unga 2ta menu 1. Start, 2. Exit lar chiqsin.
+2 bosilgan da sistemadan chiqib ketsin.
+1 ni bosganda quiz boshlansin.
+Questions listidagi questionlar bir ma bir " Question classining question filedi -> answer arrayining hamma answer fieldlari" ko'rinishida chop eting.
+Masalan : 2+2 = ? -> 1. 3 , 2. 5 , 3. 4, 4. 9 Agar user 1 ni tanlasa demak 3 javobini bergan bo'ladi.
+User natijalarini saqlab ketuvchi String[][] userResult = new String [10][3]; massivni yarating.
+masalan: userList[0] = {"2+2","1","false"}; korinishida bo'ladi.
+Quiz oxirida userResult listini "userResult[i][0] -> userResult[i][1] => userResult[i][1]" ko'rinishida ekranga chop eting.
+Agar systemaga kirgan Techer bo'ladigan bo'lsa quiz o'zgartirishlar kirita olsin yani unga 1.Create Quiz, 2. Delete Quiz, 3. Update Quiz, 4. List Quiz, 5. Exit tanlovlari berilsin.
+1 ni bosganda yangi question kirita olsin bir nechta natogri answer va togri answer bilan.
+2 ni bosganda questionni o'chira olsin.
+3 ni bosganda questionni update qila olsin.
+4 ni bosganda question listidagi elementlarni forEach orqali ekranga chop etilsin.
+5 ni bosganda systemadan chiqib ketsin.
+Package, Class, method, fieldlarga doc yozing va javaDoc generate qiling.
+
+______________________________________________________
+
+In English.
+
+Create an array of 3 that stores password, userName and role, i.e. matrix - > String [][] list = new String [10][3];
+role stores the values of the Role Enum. Role{ STUDENT, TEACHER} name.
+Add 5 custom menus.
+Ask the user to choose 1.login or 2.register.
+Fill in the user data by pressing registration, i.e. 2. By default, the added user should be added with the STUDENT role.
+if the password and username entered by the user are in the list,
+Print the message "User already exists" to the console.
+If user 1 clicks login, prompt user for password and username when logging in to System.
+If a user with the same password and username is found in the list, enter the system, if not, the message "User not found" will be printed.
+Let it be an array storing questions -> Question[] questions = new Questions[10];
+Question and Answer classes
+
+class Question {
+ private String question; // question
+ private Answer[] answers = new Answer[4];
+}
+class Answer{
+ String response; // response
+ boolean isCorrect; // is this answer correct?
+}
+
+If the role of the user who has successfully entered the system is Student or User, 2 menus 1. Start, 2. Exit should appear.
+Press 2 to exit the system.
+Press 1 to start the quiz.
+Print the questions in the list of questions one by one in the form "Question classing question file -> all answer fields of the answer array".
+For example: 2+2 = ? -> 1. 3 , 2. 5 , 3. 4, 4. 9 If the user chooses 1, then 3 is the answer.
+String that stores user results[][] userResult = new String [10][3]; create an array.
+for example: userList[0] = {"2+2","1","false"}; looks like.
+At the end of the quiz, print the userResult list in the form "userResult[i][0] -> userResult[i][1] => userResult[i][1]".
+If there is a Techer logged in to the system, he can make changes to the quiz, that is, give him the options 1. Create Quiz, 2. Delete Quiz, 3. Update Quiz, 4. List Quiz, 5. Exit.
+When you press 1, you can enter a new question with several incorrect answers and correct answers.
+Press 2 to delete the question.
+When you press 3, you can update the question.
+When you click 4, print the items in the question list to the screen using forEach.
+Press 5 to exit the system.
+Write doc in Package, Class, method, fields and generate javaDoc.

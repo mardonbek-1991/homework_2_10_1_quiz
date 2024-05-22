@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public enum Role {
+/**
+ * Enum to represent the role of a user
+ */
+public enum Role {
+    STUDENT,
+    TEACHER
 }
